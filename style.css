@@ -1,0 +1,406 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #111d27 !important;
+}
+
+.transparent-navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.fixed-navbar {
+  background-color: #132231 !important;
+}
+
+#contain{
+    max-width: 100%;
+    /* Adjust this value to increase the width */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    padding: 0 15px;
+    /* Add padding to the sides */
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 20px;
+  color: white !important;
+}
+
+.dropdown-menu {
+  background-color: #f8f9fa;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#btnn {
+  border-color: #dcf836;
+  color: #dcf836;
+
+}
+
+#btnn:hover {
+  background-color: #dcf836;
+  color: #0c1116;
+}
+
+/* New CSS for the logged-in state */
+
+.nav-item.logged-in {
+  margin-bottom: -15px;
+  /* Maintain consistent margin */
+}
+
+
+
+/* Hero Banner Styles */
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slider {
+  background: url('images/slider-bg2.jpg') no-repeat;
+  padding-bottom: 0;
+  padding-top: 180px;
+  overflow: hidden;
+}
+
+
+#hero-banner {
+  position: relative;
+  height: 80vh;
+  color: white;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+/* Hero banner - Movie Poster Card Styles */
+.movie-poster-card {
+  flex: 0 0 40%;
+  /* Adjust the width of the poster card */
+  margin-right: -50px;
+  /* Adjust the spacing between the poster card and movie info */
+}
+
+.movie-poster-card img {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+  /* Add a border-radius for rounded corners */
+}
+
+/* Movie Info Styles */
+.movie-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.movie-info h2 {
+  font-size: 80px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.movie-info p {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+
+/* Movie cards styles for the movie cards */
+
+/* Adjust width of previous and next buttons */
+.carousel-cards .carousel-control-prev,
+.carousel-cards .carousel-control-next {
+  width: 3%;
+}
+
+/* Adjust position of previous and next buttons */
+.carousel-cards .carousel-control-prev {
+  left: -5%; /* Adjust as needed */
+}
+
+.carousel-cards .carousel-control-next {
+  right: -5%; /* Adjust as needed */
+}
+
+.carousel-cards {
+  padding: 50px 100px;
+  background-color: #111d27;
+  padding-bottom: 8px;
+}
+
+.section-heading {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.section-heading::after {
+  content: '';
+  /* Create a pseudo-element for the underline */
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  /* Adjust this value to control the distance between text and underline */
+  left: 50%;
+  /* Position at the center */
+  width: 30%;
+  /* Adjust this value to control the length of the underline */
+  border-bottom: 2px solid #dcf836;
+  /* Set the underline color and style */
+  transform: translateX(-50%);
+  /* Center the underline */
+  transition: width 0.3s ease;
+  /* Add a smooth transition effect for width changes */
+}
+
+.section-heading:hover::after {
+  width: 100%;
+  /* Increase the width on hover to extend the underline */
+}
+
+/* Add this style for the view more text */
+.view-more-text {
+  font-size: 16px;
+  color: #606366;
+  /* Set your desired color */
+  cursor: pointer;
+  margin-bottom: -10px;
+  margin-right: 10px;
+}
+
+.view-more-text:hover {
+  color: #dcf836;
+}
+
+
+.section-subheading {
+  font-size: 36px;
+  color: #dcf836;
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  background-color: #1a1a1a;
+  margin: 8px;
+  width: 150px;
+}
+
+.card-img-top {
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 10px !important;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 5px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+/* Adjust carousel control colors */
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #1a1a1a;
+}
+
+/*Celebrities List*/
+
+
+.celebrities-section {
+  padding: 50px 0;
+  background-color: #111d27;
+  padding-bottom: 8px;
+}
+
+.celebrity-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.view-more {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #757d83;
+  font-size: 18px;
+}
+
+.view-more:hover {
+  color: #dcf836;
+}
+
+/* Section Styles */
+.site-section {
+  padding: 10px 100px;
+  width: 100%;
+  background-color: #132231;
+}
+
+.section-description h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.section-description p {
+  font-size: 18px;
+  color: #555;
+}
+
+.section-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #0c1116;
+  color: white;
+  padding: 10px 0;
+}
+
+.footer h4 {
+  color: #dcf836;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer a {
+  color: #dcf836;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  color: #dcf836;
+}
+
+
+.request {
+  background-color: #111d27;
+  color: #757d83;
+}
+
+/* Movies - New Releases */
+
+#movieCard {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  width: 110%;
+}
+
+#movieCard:hover {
+  transform: translateY(-5px);
+}
+
+#movieImage {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 240px;
+}
+
+#cardBody {
+  padding: 1.25rem;
+  background-color: #13181d;
+}
+
+#cardTitle {
+  font-size: 16px;
+  color: #f8f9fa;
+}
+
+.cardDetails {
+  color: #6c757d;
+  font-size: 12px;
+  padding: 1.5;
+
+}
+
+.comingsoon {
+  color: #dcf836;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*Celebrities*/
+#celebsCard {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  width: 110%;
+}
+
+#celebsCard:hover {
+  transform: translateY(-5px);
+}
+
+#celebsImage {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 240px;
+}
+
+#celebsName {
+  font-size: 16px;
+  color: #f8f9fa;
+  text-align: center;
+}
+
+#celebsRole {
+  text-align: center;
+  color: #757d83;
+  padding: 1.5;
+  text-transform: capitalize;
+  margin-bottom: -4px;
+}

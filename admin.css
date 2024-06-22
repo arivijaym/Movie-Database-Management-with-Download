@@ -1,0 +1,70 @@
+body{
+    background-color: #132231;
+}
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #111d27;
+    border-right: 1px solid #2f3f4e;
+}
+
+.sidebar-heading {
+    font-size: 0.75rem;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: white;
+}
+
+.sidebar .nav-link.active {
+    color: #dcf836;
+}
+
+main h2 {
+    color: white;
+}
+
+main h1 {
+    color: white;
+}
+
+#main .border-bottom {
+    border-bottom-color: #dcf836 !important;
+}
+
+#submit_movie1 {
+    border-color: #dcf836;
+    color: #dcf836;
+    margin-left: 15px;
+}
+
+#submit_movie1:hover {
+    background-color: #dcf836;
+    color: #0c1116;
+}
+
+main label{
+    color: #b7bdc2;
+}
+
+#movieTable th{
+    color: #b7bdc2;
+    text-align: center;
+} 
+#movieTable td{
+    color: #b7bdc2;
+}
+
+#movieTable tbody td {
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Truncate text with an ellipsis */
+}
